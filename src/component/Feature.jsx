@@ -9,7 +9,7 @@ const Feature = () => {
     <section className="mt-16 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* First Card - Host Friendly Software */}
+       
           <div
             className="text-white p-6 rounded-lg flex flex-col"
             style={{ background: "linear-gradient(to right, rgba(0, 128, 128, 1), rgba(14, 63, 63, 1))" }}
@@ -24,7 +24,7 @@ const Feature = () => {
                   className="object-contain"
                 />
               </div>
-              {/* Add the circular progress indicator shown in the image */}
+       
               <div className="absolute top-1/4 right-1/4 bg-white rounded-full h-20 w-20 flex items-center justify-center">
                 <div className="bg-teal-500 rounded-full  flex items-center justify-center text-white font-bold">
                   75%
@@ -33,7 +33,7 @@ const Feature = () => {
             </div>
           </div>
 
-          {/* Second Card - Multi-Calendar */}
+      
           <div
             className="text-white rounded-lg flex flex-col"
             style={{ background: "linear-gradient(to right, rgba(0, 128, 128, 1), rgba(14, 63, 63, 1))" }}
@@ -53,7 +53,7 @@ const Feature = () => {
             </div>
           </div>
 
-          {/* Third Card - Effortless Interaction */}
+      
           <div
             className="text-white rounded-lg flex flex-col md:flex-row items-center p-6"
             style={{ background: "linear-gradient(to right, rgba(0, 128, 128, 1), rgba(14, 63, 63, 1))" }}
@@ -75,7 +75,7 @@ const Feature = () => {
             </div>
           </div>
 
-          {/* Fourth Card - Financial Reporting */}
+
           <div
             className="text-white rounded-lg flex flex-col"
             style={{ background: "linear-gradient(to right, rgba(0, 128, 128, 1), rgba(14, 63, 63, 1))" }}
