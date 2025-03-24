@@ -10,7 +10,6 @@ import image4 from "../images/r.png";
 import image5 from "../images/G.png";
 import image6 from "../images/a.png";
 
-// Stagger container for animations
 export const staggerContainer = (staggerChildren = 0.2, delayChildren = 0) => ({
   hidden: {},
   show: {
@@ -21,15 +20,13 @@ export const staggerContainer = (staggerChildren = 0.2, delayChildren = 0) => ({
   },
 });
 
-// Text animation variants
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-// Image positions and sources
 const images = [
-  { src: image1, className: "top-1/4 right-0 translate-x-1/2" },
+  { src: "../images/G.png", className: "top-1/4 right-0 translate-x-1/2" },
   { src: image2, className: "top-1/2 right-0 translate-x-1/2" },
   { src: image3, className: "bottom-1/4 right-0 translate-x-1/2" },
   { src: image4, className: "bottom-1/4 left-0 -translate-x-1/2" },
@@ -78,16 +75,16 @@ const Hero = () => {
 
             {/* Floating Images */}
             {images.map((image, index) => (
-              <motion.div
-                key={index}
-                className={`absolute hidden sm:block ${image.className}`}
-                variants={textVariants}
-              >
-                <div className="rounded-full overflow-hidden h-12 w-12 shadow-md">
-                  <img src={images.src} alt={`Floating ${index}`} className="w-full h-full object-cover" />
-                </div>
-              </motion.div>
-            ))}
+  <motion.div
+    key={index}
+    className={`absolute hidden sm:block ${image.className}`}
+    variants={textVariants}
+  >
+    <div className="rounded-full overflow-hidden h-12 w-12 shadow-md">
+      <img src={image.src} alt={`Floating ${index}`} className="w-full h-full object-cover" />
+    </div>
+  </motion.div>
+))}
           </div>
         </div>
       </motion.div>
