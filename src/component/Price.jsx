@@ -14,7 +14,7 @@ const Price = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto blur-lg">
+        <div className="max-w-4xl mx-auto ">
           <div className="bg-teal-500/20 backdrop-blur-sm rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
