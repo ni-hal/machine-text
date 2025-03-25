@@ -39,7 +39,7 @@ const Price = () => {
                     <span className="text-sm text-teal-50">/Unit/month</span>
                   </div>
                   <p className="text-sm mb-6 text-teal-50">{plan.desc}</p>
-                  <button className={`w-full py-2 rounded-lg transition duration-300 ease-in-out transform group-hover:scale-110 ${
+                  <button className={`w-full py-2 rounded-lg transition duration-300 ease-in-out transform group-hover:scale-150 ${
                     plan.popular 
                       ? 'bg-teal-500 hover:bg-teal-400 text-white' 
                       : 'bg-teal-500 hover:bg-teal-400 text-white'
@@ -52,8 +52,8 @@ const Price = () => {
           </div>
           
           <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
-            <button className="bg-white text-teal-600 hover:bg-teal-50 px-8 py-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
-              Start Free Trial →
+          <button className="relative h-[50px] w-40 overflow-hidden border border-green-900 bg-white text-green-900 shadow-2xl transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-green-900 before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-green-900 after:duration-500 hover:text-white hover:shadow-green-900 hover:before:h-2/4 hover:after:h-2/4 rounded-full">
+              <span className="relative z-10">Start Free Trial</span>
             </button>
             <button className="text-white border border-white/30 hover:bg-teal-500/20 px-8 py-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
               Chat with us
