@@ -26,9 +26,9 @@ const Connected = () => {
             <button className="bg-transparent text-white border border-white hover:bg-teal-500/20 rounded-full px-6 py-3 font-medium">
               Chat with us
             </button>
-            <div className="absolute left-80 -top-25  -translate-y-1/2  hidden">
+            <div className="absolute left-80 -top-25  -translate-y-1/2 ">
               <div className="relative w-8 h-8 left-16">
-                <Image src={Elipse} alt="OTA" className=" object-cover rounded-full" />
+                <Image src={Elipse} alt="OTA" className="" />
                 <div className="absolute top-0 left-0 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center">
                   <span><Image src={kayak} alt="OTA" className="" /></span>
                 </div>
@@ -45,9 +45,9 @@ const Connected = () => {
       </div>
 
       {/* Left side OTA icons */}
-      <div className="absolute left-4 md:left-72 top-4 -translate-y-1/2 ">
+      <div className="absolute left-4 md:left-72 top-20 -translate-y-1/2 ">
         <div className="relative w-32 h-32 md:w-40 md:h-40 left-48">
-          <Image src={Elipse} alt="OTA" className="w-full h-full object-cover rounded-full" />
+          <Image src={Elipse} alt="OTA" className="" />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-red-500 rounded-full w-12 h-12 flex items-center justify-center">
             <span className="text-white font-bold">A</span>
           </div>
